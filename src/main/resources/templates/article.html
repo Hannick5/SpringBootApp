@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns=http://www.w3.org/1999/xhtml
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Getting Started: Serving Web Content</title>
+  <meta http-equiv="Content-Type" content="text/html;
+charset=UTF-8" />
+</head>
+<body>
+<p th:text="'Titre : ' + ${art.title}" />
+<p th:text="'Contenu : ' + ${art.content}" />
+<p th:text="'Id : ' + ${art.id}" />
+<p th:text="'Auteur : ' + ${art.getAuthor().getFirstName()} + ' ' + ${art.getAuthor().getLastName()}" />
+</body>
+</html>
